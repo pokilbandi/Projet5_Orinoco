@@ -1,0 +1,84 @@
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #d1b581;
+    margin: auto;
+}
+.navbar-item {
+    float: right;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+.navbar img {
+    height: 10vh;
+    padding-left: 0.4rem;
+}
+.navbar i {
+    padding-right: 0.4rem;
+}
+
+.shopping-cart{
+    color: #fff;
+    text-shadow: grey 5px 3px;
+    font-family: "Pacifico";
+    text-decoration: none;
+    padding: 0rem 0.5rem;
+    font-size: 1.15rem;
+}
+
+h1 {
+    font-family: "Pacifico";
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    text-shadow: grey 5px 3px;
+}
+
+.navbar-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #d1b581;
+    margin: auto;
+}
+.navbar-footer a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    padding: 0rem 0.5rem;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+}
+
+.social {
+    align-self: center;
+    justify-self: flex-end;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
+
+i {
+    padding: 0.5rem 0.5rem;
+}
+
+body {
+    margin: 0rem;
+    background-color: #fff;
+}
+
+header {
+    z-index: 1;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
