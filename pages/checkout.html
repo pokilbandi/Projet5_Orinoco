@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Orinoco, L'ourson fait maison!">
+        <meta name="keywords" content="Ours en peluche, doudou, Made in France, Orinoco, fait main, fabrication française, Teddy bear">
+        <meta name="author" content="Matthieu Cognée">
+
+        <link rel="stylesheet" href="../css/checkout.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Pacifico&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/8685234fa9.js" crossorigin="anonymous"></script>
+
+        <script defer src="../js/checkout.js"></script>
+
+        <title>Votre panier d'oursons!</title>
+
+    </head>
+
+    <body onload="teddyGet()">
+
+        <header>
+            <nav class="navbar">
+                <img src="../images/logo_teddy2.png" alt="logo">
+                <h1>Orinoco</h1>
+                <div class="navbar-item">
+                    <a class="shopping-cart" href="../pages/index.html"><i class="fas fa-home"></i>Home</a>
+                </div>
+            </nav>
+        </header>
+
+            <section id="form">
+                <div id="onclick--form">
+                    <form class="form-container" id="postData">
+                        <label for="firstName">Prénom</label>
+                        <input type="text" name="firstName" placeholder="Votre prénom..." pattern="[a-z-'éèA-Z]+" id="firstName" maxlength="20" required>
+
+                        <label for="lastName">Nom de Famille</label>
+                        <input type="text" name="lastName" placeholder="Votre nom..." pattern="[a-z-'éèA-Z]+" id="lastName" maxlength="30" required>
+
+                        <label for="address">Adresse</label>
+                        <input type="text" name="address" placeholder="Votre adresse..." pattern="[0-9 'éèa-zA-Z]+" id="address" maxlength="60" required>
+
+                        <label for="city">Ville</label>
+                        <input type="text" name="city" placeholder="Votre ville..." pattern="[a-z-'éè A-Z]+" id="city" maxlength="35" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="exemple123@test.com" id="email" required>
+
+                        <div class="buttons">
+                            <button type="button" id="confirmOrder" onclick="orderTeddies()">Valider</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <nav class="navbar-footer"> 
+                <div class="social">
+                    <a href="#" target="_blank"><span class="social-text">Facebook</span><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><span class="social-text">LinkedIn</span><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><span class="social-text">Instagram</span><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><span class="social-text">Twitter</span><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="#" class="legal">Mentions légales</a>
+            </nav>
+        </footer>
+
+    </body>
+</html>

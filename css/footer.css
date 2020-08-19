@@ -1,0 +1,32 @@
+.navbar-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #863356;
+    margin: auto;
+}
+.navbar-footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0rem 0.5rem;
+}
+.legal {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+}
+
+.social {
+    margin-top: 3em;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+}
+
+i {
+    padding: 0.5rem 0.5rem;
+}

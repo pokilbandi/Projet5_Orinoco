@@ -1,0 +1,43 @@
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: #863356;
+}
+.navbar-item {
+    float: right;
+    margin-left: auto;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar img {
+    height: 10vh;
+    padding-left: 0.4rem;
+}
+.navbar i {
+    padding-right: 0.4rem;
+}
+
+.shopping-cart{
+    color: #fff;
+    text-shadow: grey 5px 3px;
+    text-decoration: none;
+    padding: 0rem 0.5rem;
+    font-size: 1.15rem;
+}
+
+h1 {
+    font-family: "Pacifico";
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    text-shadow: grey 5px 3px;
+}

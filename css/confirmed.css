@@ -1,0 +1,30 @@
+#confirmationInfo {
+  color: #333;
+  background-color: #f1eaea;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1.5rem 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.recap {
+  text-decoration: underline;
+}
+
+.importedInfo {
+  font-size: 1.5rem;
+  font-weight: 650;
+}

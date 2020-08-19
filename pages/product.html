@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Produits Oriteddy, la page pour trouver tous vos oursons préférés !">
+        <meta name="author" content="Matthieu Cognée">
+
+        <link rel="stylesheet" href="../css/product.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Pacifico&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/8685234fa9.js" crossorigin="anonymous"></script>
+
+        <title>Produits - Orinoco</title>
+    
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <img src="../images/logo_teddy2.png" alt="logo">
+                <h1>Orinoco</h1>
+                <div class="navbar-item">
+                    <a class="shopping-cart" href="../pages/index.html"><i class="fas fa-home"></i>Page Principale</a>
+                    <a class="shopping-cart" href="../pages/checkout.html"><i class="fas fa-shopping-cart"></i>Panier</a>
+                </div>
+            </nav>
+        </header>
+
+        <section id="container">
+            <div id="product">
+            </div>
+
+            <section class="teddyColor">
+                <label for="teddy-colors">Couleur</label>
+                <select id="teddy-colors" size="1"></select>
+            </section>
+
+            <div class="panierLink">
+                <button type="button" class="checkoutClick" id="btn-checkout" onclick="location.href = 'checkout-page.html';">Accéder au panier</button>
+            </div>
+        </section>
+
+        <footer>
+            <nav class="navbar-footer"> 
+                <div class="social">
+                    <a href="#" target="_blank"><span class="social-text">Facebook</span><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><span class="social-text">LinkedIn</span><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><span class="social-text">Instagram</span><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><span class="social-text">Twitter</span><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="#" class="legal">Mentions légales</a>
+            </nav>
+        </footer>
+
+        <script src="../js/product.js"></script>
+    </body>
+</html>
