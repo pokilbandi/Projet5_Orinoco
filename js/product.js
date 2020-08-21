@@ -14,12 +14,18 @@ async function getTeddy() {
         const { name, _id, colors, price, description, imageUrl } = teddy
         teddyAppend.innerHTML +=
         `<div class="${name}">
-        <h3 class="teddyName">${name}</h3>
-        <img src="${imageUrl}" alt="Photo de ${name}" class="teddyPhoto"></img>
-        <ul class="teddyInfo">
-        <li id="price">Prix: ${price/100}€</li> 
-        </ul> 
-        </div>`;
+                <h3 class="teddyName">${name}</h3>
+                <ul class="teddyInfo">Qui est ${name}
+                    <li class="teddy_description">${description}</li>
+                    <li id="price">Prix: ${price/100}€</li> 
+                </ul> 
+                <img src="${imageUrl}" alt="Photo de ${name}" class="teddyPhoto"></img>
+            </div>`;
+
+        for (let i = 0; i < colors.length; i++) {
+            teddyColorAppend.innerHTML +=
+            `<option id="appendedColors" value="${colors[i]}" selected="selected">  ${colors[i]}  </option>`;
+        }    
 
     return teddy;
 }
