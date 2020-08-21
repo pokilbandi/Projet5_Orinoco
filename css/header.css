@@ -1,8 +1,31 @@
 
+@media (max-width: 650px) {
+    .navbar {
+        flex-flow: column nowrap !important;
+    }
+    .navbar img {
+        padding-top: 1.5rem;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    h1 {
+        padding: 1rem;
+        margin: 0rem;
+        margin-bottom: 2rem;
+    }
+    .navbar-item {
+        margin-bottom: 1rem;
+    }
+}
+
 header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    box-shadow: 0px 5px 5px grey;
 }
 
 .navbar {
@@ -29,7 +52,6 @@ header {
 
 .shopping-cart{
     color: #fff;
-    text-shadow: grey 5px 3px;
     text-decoration: none;
     padding: 0rem 0.5rem;
     font-size: 1.15rem;

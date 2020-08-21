@@ -1,9 +1,9 @@
-const urlAPI = "http://localhost:3000/api/teddies";        
+const urlAPI = "http://localhost:3000/api/teddies";
 const teddyAppend = document.getElementById("mainPage");
 
 async function getTeddies() {                      
-    let response = await fetch(urlAPI);           
-    let data = await response.json()                
+    var response = await fetch(urlAPI);           
+    var data = await response.json()                
     .then((data) => {
         data.forEach((teddy) => {                   
             const { name, _id, colors, price, description, imageUrl } = teddy      

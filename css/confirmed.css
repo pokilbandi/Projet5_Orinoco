@@ -1,3 +1,7 @@
+body {
+  margin: 0px !important;
+}
+
 #confirmationInfo {
   color: #333;
   background-color: #f1eaea;

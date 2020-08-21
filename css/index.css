@@ -1,7 +1,8 @@
 
+
 body {
-    margin: 0rem;
-    background-color: #fff;
+        margin: 0rem;
+        background-color: #fff;
 }
 
 header {
@@ -12,21 +13,26 @@ header {
 h2 {
     text-align: center;
 }
+
 .teddyPhoto {
     margin: auto;
     max-width: 20em;
     max-height: 12em;
     box-shadow: 3px 2px 2px 1.5px rgba(145, 133, 133, 0.6);
 }
+
 .teddyName {
     font-family: Pacifico;
 }
+
 .teddyInfo {
     list-style-type: none;
 }
+
 #price {
     font-family: 'Courier New', Courier, monospace;
 }
+
 #mainPage {
     display: grid;
     justify-content: center;
@@ -36,6 +42,7 @@ h2 {
     margin-top: 5em;
     margin-bottom: 5em;
 }
+
 .Norbert {
     grid-row: 1;
     grid-column: 1;
@@ -43,27 +50,78 @@ h2 {
     flex-direction: column;
     
 }
+
 .Arnold {
     grid-row: 1;
     grid-column: 2;
     display: flex;
     flex-direction: column;
 }
+
 .Lenny.and.Carl {
     grid-row: 1;
     grid-column: 3;
     display: flex;
     flex-direction: column;
 }
+
 .Gustav {
     grid-row: 2;
     grid-column: 1;
     display: flex;
     flex-direction: column;
 }
+
 .Garfunkel {
     grid-row: 2;
     grid-column: 3;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 650px) {
+    #mainPage {
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        row-gap: 2em;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+    
+    .Norbert {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .Arnold {
+        grid-row: 2;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Lenny.and.Carl {
+        grid-row: 3;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Gustav {
+        grid-row: 4;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Garfunkel {
+        grid-row: 5;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+    }
 }

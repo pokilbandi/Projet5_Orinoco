@@ -1,4 +1,3 @@
-// Récupération du localStorage
 const checkoutItems = JSON.parse(localStorage.getItem('orderIsConfirmed')) || []; 
 
 let textZone = document.getElementById('confirmationInfo');
