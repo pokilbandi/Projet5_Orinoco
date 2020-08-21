@@ -3,7 +3,7 @@ const checkoutItems = JSON.parse(localStorage.getItem('orderIsConfirmed')) || []
 
 let textZone = document.getElementById('confirmationInfo');
 
-// Création du contenu HTML && intégration du contenu du localStorage
+
 textZone.innerHTML += 
 `
 <h2> Merci pour votre commande !</h2>
