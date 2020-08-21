@@ -8,25 +8,21 @@ async function getTeddy() {
     var urlProduct = urlAPI.concat(get_id)
     var response = await fetch(urlProduct);
         console.log(response)          
-    var data = await response.json() 
-        console.log(data)
-    
-    fetch(urlProduct).then(response => response.json())
-        for((teddy) => {
-            const { name, _id, colors, price, description, imageUrl } = teddy
-            teddyAppend.innerHTML +=
-            `<div class="${name}">
-            <h3 class="teddyName">${name}</h3>
-            <img src="${imageUrl}" alt="Photo de ${name}" class="teddyPhoto"></img>
-            <ul class="teddyInfo">
-            <li id="price">Prix: ${price/100}€</li> 
-            </ul> 
-            </div>`;
-        })
-        catch(error => console.error(error));
-    return data;
-}
+    var teddy = await response.json() 
+        console.log(teddy)
 
-window.onload = () => {
+        const { name, _id, colors, price, description, imageUrl } = teddy
+        teddyAppend.innerHTML +=
+        `<div class="${name}">
+        <h3 class="teddyName">${name}</h3>
+        <img src="${imageUrl}" alt="Photo de ${name}" class="teddyPhoto"></img>
+        <ul class="teddyInfo">
+        <li id="price">Prix: ${price/100}€</li> 
+        </ul> 
+        </div>`;
+
+    return teddy;
+}
+        window.onload = () => {
     getTeddy();
 }

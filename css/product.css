@@ -1,3 +1,17 @@
 body {
     margin: 0px !important;
 }
+.teddyPhoto {
+    margin: auto;
+    max-width: 40em;
+    max-height: 24em;
+    box-shadow: 3px 2px 2px 1.5px rgba(145, 133, 133, 0.6);
+}
+
+.teddyName {
+    font-family: Pacifico;
+}
+
+.teddyInfo {
+    list-style-type: none;
+}
