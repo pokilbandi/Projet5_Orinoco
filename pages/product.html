@@ -5,44 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Produits Oriteddy, la page pour trouver tous vos oursons préférés !">
         <meta name="author" content="Matthieu Cognée">
-
         <link rel="stylesheet" href="../css/product.css">
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/popup.css">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Pacifico&display=swap" rel="stylesheet">
-
-        <script src="https://kit.fontawesome.com/8685234fa9.js" crossorigin="anonymous"></script>
-
+        <!--<script src="https://kit.fontawesome.com/8685234fa9.js" crossorigin="anonymous"></script>-->
         <title>Produits - Orinoco</title>
     
     </head>
 
     <body>
-
         <header>
             <nav class="navbar">
                 <img src="../images/logo_teddy2.png" alt="logo">
                 <h1>Orinoco</h1>
                 <div class="navbar-item">
                     <a class="shopping-cart" href="../pages/index.html"><i class="fas fa-home"></i>Home</a>
-                    <a class="shopping-cart" href="../pages/checkout.html"><i class="fas fa-shopping-cart"></i>Panier</a>
+                    <a class="shopping-cart" href="../pages/panier.html"><i class="fas fa-shopping-cart"></i>Panier</a>
                 </div>
             </nav>
         </header>
-        <section id="container-fluid">
 
+        <section id="container-fluid">
             <div id="product">
             </div>
-
-            <div class="teddyColors">
-                <label for="teddy-colors">Personnalise ton Ourson </label>
-                <select id="teddy-colors" size="1">
-                </select>
+            <div class="teddyOption">
+                <form action="" method="get" class="form-tedoption">
+                    <div class="form-tedoption">
+                        <label for="teddy-colors">Qu'elle couleur pour ton Ourson ?</label>
+                        <select id="teddy-colors" size="1"></select>
+                    </div>
+                    <div class="form-tedoption">
+                        <label for="quantite">Combien en veux-tu ?</label>
+                        <input type="text" id="quantite" value="1"/>
+                    </div>
+                </form>
             </div>
-
+                
             <div class="panierLink">
-                <a class="checkoutClick" onclick="location.href = '../pages/checkout.html';">
-                <span>PANIER</span>
+                <a type="button" class="checkoutClick " value="Save" onclick="SaveItem()">
+                <span>Ajouter au panier</span>
                 <span>
                     <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -54,7 +57,6 @@
                 </span> 
                 </a>
             </div>
-
         </section>
 
         <footer>

@@ -1,8 +1,9 @@
 const urlAPI = "http://localhost:3000/api/teddies/";         
 const teddyAppend = document.getElementById("product");
 const teddyColorAppend = document.getElementById("teddy-colors");
+const postUrlAPI = "http://localhost:3000/api/teddies/order";
 
-async function getTeddy() {
+async function getItem() {
     var url = document.URL;
     var get_id = url.substring(url.lastIndexOf('id') + 3);
     var urlProduct = urlAPI.concat(get_id)
@@ -36,7 +37,29 @@ async function getTeddy() {
         }    
 
     return teddy;
+
 }
-        window.onload = () => {
-    getTeddy();
+
+//add new key=>value to the HTML5 storage
+async function SaveItem() {
+    var url = document.URL;
+    var get_id = url.substring(url.lastIndexOf('id') + 3);
+    var urlProduct = urlAPI.concat(get_id)
+    var response = await fetch(urlProduct);
+        console.log(response)          
+    var teddy = await response.json() 
+        console.log(teddy)
+        const { name, _id, colors, price, description, imageUrl } = teddy
+        const ted = {imageUrl,  name, price}
+    var quantite = 1
+    var quantite = document.getElementById("quantite").value;
+    console.log(quantite)
+    localStorage.setItem('teddy', JSON.stringify(ted));
+    console.log(localStorage)
+}
+
+
+
+window.onload = () => {
+    getItem();
 }

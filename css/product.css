@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
-
-
 body {
     margin: 0px !important;
 }
@@ -8,13 +5,14 @@ body {
 .panierLink {
     display: flex;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .checkoutClick {
     display: flex;
     padding: 10px 45px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
     color: white;
     background: #863356;
@@ -28,6 +26,7 @@ body {
 }
 
 .checkoutClick:hover {
+    cursor: pointer;
     transition: 0.5s;
     box-shadow: 10px 10px 0 rgba(173, 88, 123, 0.521);
 }
@@ -135,10 +134,31 @@ footer {
     margin-top: 5em;
 }
 
-.teddyColors {
+.teddyOption {
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 2em;
+    margin-top: 5em;
     margin-bottom: 5em;
 }
 
+label, select {
+    display: table-cell;
+    margin-bottom: 30px;
+}
 
+label {
+    margin-right: 30px;
+}
+
+div.form-tedoption {
+    display: table-row;
+}
+
+.modal {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -150px;
+    margin-top: -150px;
+}

@@ -25,7 +25,16 @@
                 <img src="../images/logo_teddy2.png" alt="logo">
                 <h1>Orinoco</h1>
                 <div class="navbar-item">
-                    <a class="shopping-cart" href="../pages/checkout.html"><i class="fas fa-shopping-cart"></i>Panier</a>
+                    <div class="dropdown">
+                        <div id="cart">
+                            <p><span id="in-cart-items-num">0</span> Articles</p>
+                        </div>
+                        <ul id="cart-dropdown" hidden>
+                            <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+                            <li class="go-to-cart hidden"><a href="../pages/panier.html">Voir le panier</a></li>
+                        </ul>
+                    </div>
+                    <a class="shopping-cart" href="../pages/panier.html"><i class="fas fa-shopping-cart"></i>Panier</a>
                 </div>
             </nav>
         </header>
